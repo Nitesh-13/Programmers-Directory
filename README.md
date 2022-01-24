@@ -9,3 +9,4 @@ This Repository consists of a chrome extension which lists top websites useful f
 1. Enable Developer Mode.
 1. Drag the `Programmers-Directory-main` folder anywhere on the page or click `Load Unpacked` and select the folder to import it (do not delete the folder afterwards).
 1. Pin the extension and now we can use it by just clicking on it.
+1. You can change the links listed in the extension by changing it from the settings page.
