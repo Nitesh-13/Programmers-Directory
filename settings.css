@@ -1,0 +1,80 @@
+body {
+    margin-top: 20px;
+    color: #bcd0f7;
+    background: #1A233A;
+}
+
+.in-card .extension-info {
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.in-card .extension-logo .extension-info {
+    margin: 0 0 1rem 0;
+}
+
+.in-card .extension-logo .extension-info  {
+    width: 90px;
+    height: 90px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.in-card .extension-info h5.title {
+    margin: 0 0 0.5rem 0;
+}
+
+.in-card .extension-info h6.github {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.in-card .about {
+    margin: 1rem 0 0 0;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.card {
+    background: #272E48;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 16px;
+}
+
+.card2 {
+    background: #272E48;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-top: -21px;
+    min-height: 500px;
+}
+
+.header-title {
+    text-align: center;
+}
+
+.logo-icon {
+    color: yellowgreen;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.edit {
+    color: #272E48;
+}
