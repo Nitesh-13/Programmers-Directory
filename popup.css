@@ -67,3 +67,9 @@ img {
     font-size: 40px;
     color: #2f5876;
 }
+
+.settings {
+    vertical-align: text-top;
+    margin-left: 28px;
+    color: white;
+}
