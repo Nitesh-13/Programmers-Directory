@@ -96,6 +96,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar {
+    height: 0px;
     width: 10px;
 }
  
