@@ -1,0 +1,26 @@
+window.onload = function () {
+    if (localStorage.w3Edit != null)
+        document.getElementById("w3schools").href = localStorage.w3Edit;
+    if (localStorage.gfgEdit != null)
+        document.getElementById("gfg").href = localStorage.gfgEdit;
+    if (localStorage.cdEdit != null)
+        document.getElementById("codedope").href = localStorage.cdEdit;
+    if (localStorage.cacademyEdit != null)
+        document.getElementById("codecademy").href = localStorage.cacademyEdit;
+    if (localStorage.hrEdit != null)
+        document.getElementById("hackerrank").href = localStorage.hrEdit;
+    if (localStorage.ccEdit != null)
+        document.getElementById("codechef").href = localStorage.ccEdit;
+    if (localStorage.cwEdit != null)
+        document.getElementById("codewars").href = localStorage.cwEdit;
+    if (localStorage.tcEdit != null)
+        document.getElementById("topcoder").href = localStorage.tcEdit;
+    if (localStorage.crioEdit != null)
+        document.getElementById("crio.do").href = localStorage.crioEdit;
+    if (localStorage.hdEdit != null)
+        document.getElementById("hackaday").href = localStorage.hdEdit;
+    if (localStorage.fccEdit != null)
+        document.getElementById("freecodecamp").href = localStorage.fccEdit;
+    if (localStorage.scEdit != null)
+        document.getElementById("skillcrush").href = localStorage.scEdit;
+}
