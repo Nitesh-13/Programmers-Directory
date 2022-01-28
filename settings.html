@@ -7,12 +7,7 @@
 
     <title>Settings - Programmer's Directory</title>
 
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/all.js"></script>
-    <script src="js/settings.js"></script>
+    
     
     <link href="extra/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -21,7 +16,7 @@
     <link href="css/settings.css" rel="stylesheet" type="text/css">
 </head>
 
-<body onload="checkURLUpdate()">
+<body>
     <div class="container">
         <div class="row gutters">
 
@@ -35,7 +30,7 @@
                                     <i class="fas fa-code logo-icon"></i>
                                 </div>
                                 <h5 class="title">Programmer's Directory</h5>
-                                <h6 class="github"><a href="https://github.com/Nitesh-13/" title="My Github Profile"><i
+                                <h6 class="github"><a href="https://github.com/Nitesh-13/" target="_blank" title="My Github Profile"><i
                                             class="fab fa-github"></i> github.com/Nitesh-13</a></h6>
                             </div>
                             <div class="about">
@@ -64,8 +59,7 @@
                                                 <h2>W3Schools</h2>
                                                 <span>
                                                     <p id="w3schools" contenteditable="true">https://w3schools.com/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="saveW3()">Save</button>
+                                                    <button type="button" class="save-btn" id="savew3">Save</button>
                                                     <i id="updatew3"></i>
                                                 </span>
                                                 
@@ -80,8 +74,7 @@
                                                 <h2>GeeksForGeeks</h2>
                                                 <span>
                                                     <p id="gfg" contenteditable="true">https://geeksforgeeks.org/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="saveGFG()">Save</button>
+                                                    <button type="button" class="save-btn" id="savegfg">Save</button>
                                                     <i id="updategfg"></i>
                                                 </span>
                                                 
@@ -96,8 +89,7 @@
                                                 <h2>CodeDope</h2>
                                                 <span>
                                                     <p id="codedope" contenteditable="true">https://codesdope.com/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="saveCD()">Save</button>
+                                                    <button type="button" class="save-btn" id="savecd">Save</button>
                                                     <i id="updatecd"></i>
                                                 </span>
                                                 
@@ -114,8 +106,7 @@
                                                 <h2>Codecademy</h2>
                                                 <span>
                                                     <p id="codecademy" contenteditable="true">https://www.codecademy.com/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="saveCACADEMY()">Save</button>
+                                                    <button type="button" class="save-btn" id="savecacademy">Save</button>
                                                     <i id="updatecacademy"></i>
                                                 </span>
                                                 
@@ -130,8 +121,7 @@
                                                 <h2>HackerRank</h2>
                                                 <span>
                                                     <p id="hackerrank" contenteditable="true">https://www.hackerrank.com/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="saveHR()">Save</button>
+                                                    <button type="button" class="save-btn" id="savehr">Save</button>
                                                     <i id="updatehr"></i>
                                                 </span>
                                                 
@@ -146,8 +136,7 @@
                                                 <h2>CodeChef</h2>
                                                 <span>
                                                     <p id="codechef" contenteditable="true">https://www.codechef.com/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="saveCC()">Save</button>
+                                                    <button type="button" class="save-btn" id="savecc">Save</button>
                                                     <i id="updatecc"></i>
                                                 </span>
                                                 
@@ -164,8 +153,7 @@
                                                 <h2>CodeWars</h2>
                                                 <span>
                                                     <p id="codewars" contenteditable="true">https://www.codewars.com/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="saveCW()">Save</button>
+                                                    <button type="button" class="save-btn" id="savecw">Save</button>
                                                     <i id="updatecw"></i>
                                                 </span>
                                                 
@@ -180,8 +168,7 @@
                                                 <h2>TopCoder</h2>
                                                 <span>
                                                     <p id="topcoder" contenteditable="true">https://www.topcoder.com/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="saveTC()">Save</button>
+                                                    <button type="button" class="save-btn" id="savetc">Save</button>
                                                     <i id="updatetc"></i>
                                                 </span>
                                                 
@@ -196,8 +183,7 @@
                                                 <h2>Crio.Do</h2>
                                                 <span>
                                                     <p id="crio.do" contenteditable="true">https://www.crio.do/projects/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="saveCRIO()">Save</button>
+                                                    <button type="button" class="save-btn" id="savecrio">Save</button>
                                                     <i id="updatecrio"></i>
                                                 </span>
                                                 
@@ -214,8 +200,7 @@
                                                 <h2>Hackaday</h2>
                                                 <span>
                                                     <p id="hackaday" contenteditable="true">https://hackaday.io/projects/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="saveHD()">Save</button>
+                                                    <button type="button" class="save-btn" id="savehd">Save</button>
                                                     <i id="updatehd"></i>
                                                 </span>
                                                 
@@ -230,8 +215,7 @@
                                                 <h2>FreeCodeCamp</h2>
                                                 <span>
                                                     <p id="freecodecamp" contenteditable="true">https://www.freecodecamp.org/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="saveFCC()">Save</button>
+                                                    <button type="button" class="save-btn" id="savefcc">Save</button>
                                                     <i id="updatefcc"></i>
                                                 </span>
                                                 
@@ -246,8 +230,7 @@
                                                 <h2>SkillCrush</h2>
                                                 <span>
                                                     <p id="skillcrush" contenteditable="true">https://skillcrush.com/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="saveSC()">Save</button>
+                                                    <button type="button" class="save-btn" id="savesc">Save</button>
                                                     <i id="updatesc"></i>
                                                 </span>
                                                 
@@ -264,8 +247,7 @@
                                                 <h2>W3Schools</h2>
                                                 <span>
                                                     <p id="edit" contenteditable="true">https://w3schools.com/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="saveEdits()">Save</button>
+                                                    <button type="button" class="save-btn" id="">Save</button>
                                                     <i id="update"></i>
                                                 </span>
                                                 
@@ -280,8 +262,7 @@
                                                 <h2>GeeksForGeeks</h2>
                                                 <span>
                                                     <p id="gfg" contenteditable="true">https://geeksforgeeks.org/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="editGFG()">Save</button>
+                                                    <button type="button" class="save-btn" id="">Save</button>
                                                     <i id="updateGFG"></i>
                                                 </span>
                                                 
@@ -296,8 +277,7 @@
                                                 <h2>CodeDope</h2>
                                                 <span>
                                                     <p id="edit" contenteditable="true">https://codesdope.com/</p>
-                                                    <button type="button" class="save-btn" value="save my edits"
-                                                        onclick="saveEdits()">Save</button>
+                                                    <button type="button" class="save-btn" id="">Save</button>
                                                     <i id="update"></i>
                                                 </span>
                                                 
@@ -313,6 +293,13 @@
         </div>
     </div>
 
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/settings.js"></script>
 </body>
 
 </html>
